@@ -1,0 +1,27 @@
+unKnown:
+  code: "-9999"
+  msg: "시스템 오류가 발생하였습니다."
+inconsistent:
+  code: "-1000"
+  msg: "뿌리기 정보가 잘못되었습니다. 다시 요청해주세요."
+ownerReceived:
+  code: "-2000"
+  msg: "자신의 뿌리기는 받을 수 없습니다."
+notExistInRoom:
+  code: "-2001"
+  msg: "해당 대화방에 존재하지 않는 뿌리기 정보입니다."
+duplicateReceived:
+  code: "-2002"
+  msg: "해당 뿌리기는 이미 받았습니다."
+timeExpired:
+  code: "-2003"
+  msg: "해당 뿌리기는 만료되었습니다."
+notValidUser:
+  code: "-3000"
+  msg: "뿌린 사람만 조회가 가능합니다."
+notValidToken:
+  code: "-3001"
+  msg: "유효하지 않은 토큰 정보입니다."
+periodExpired:
+  code: "-3002"
+  msg: "뿌리기 건의 조회 기간이 만료되었습니다."
