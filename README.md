@@ -90,7 +90,4 @@
 
 ---
 
-## Exception 처리
-### `@ControllerAdvice`를 활용한 Exception 처리
-
 
