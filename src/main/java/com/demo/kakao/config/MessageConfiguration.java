@@ -31,7 +31,7 @@ public class MessageConfiguration implements WebMvcConfigurer {
     @Bean
     public LocaleChangeInterceptor localeChangeInterceptor() {
         LocaleChangeInterceptor lci = new LocaleChangeInterceptor();
-        lci.setParamName("lnag");
+        lci.setParamName("lang");
         return lci;
     }
 
@@ -43,7 +43,8 @@ public class MessageConfiguration implements WebMvcConfigurer {
 
     // yml 파일 참조 설정
     @Bean
-    public MessageSource messageSource(@Value("${spring.messages.basename}") String basename, @Value("${spring.messages.encoding}") String encoding) {
+    public MessageSource messageSource(@Value("${spring.messages.basename}") String basename,
+                                       @Value("${spring.messages.encoding}") String encoding) {
         YamlMessageSource yms = new YamlMessageSource();
         yms.setBasename(basename);
         yms.setDefaultEncoding(encoding);
